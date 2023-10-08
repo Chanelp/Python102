@@ -1,7 +1,7 @@
 def my_divide(a, b):
    try:
       result = a / b
-   except ZeroDivisionError as error:
+   except ZeroDivisionError:
       result = 'No se puede dividir por 0'
    return result
     
