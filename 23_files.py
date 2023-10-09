@@ -6,6 +6,6 @@ for line in file:
 file.close()
 
 # Open and close de file 
-with open("./text.text") as file:
+with open("./text.txt") as file:
     for line in file:
         print(line)
