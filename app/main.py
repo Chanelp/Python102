@@ -1,25 +1,18 @@
 import utils
-
-data = [{
-		'Country': 'Colombia',
-		'Population': 500
-	},
-	{
-		'Country': 'Bolivia',
-		'Population': 300
-	}
-	]
+import read_csv
+import charts
 
 def run():
-	print(utils.get_population())
-
-
+	data = read_csv.read_csv("./app/data.csv")
 	country = input("Type country: ")
-	country =  country.capitalize()
 
 	result = utils.population_by_country(data, country)
-	print(result)
 
-# Este if nos da la posibilidad de manejar el archivo como un script, desde la terminal.
+	if len(country) > 0:
+		country = result[0]
+		labels, values = utils.get_population(country)
+		print(labels, values)
+		charts.generate_bar_chart(labels, values)
+
 if __name__ == "__main__":
 	run()
