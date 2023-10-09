@@ -1,10 +1,1 @@
-Este es un texto importante
-con informacion valiosa
-lo usamos de prueba
-para aprender 
-a leer
-archivos
-en
-python
-Ingles basico
-Libro para aprender ignles >D
+Sobreescribiendo todo!
