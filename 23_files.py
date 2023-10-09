@@ -1,3 +1,11 @@
 file = open("./text.txt")
-print(file.readline())
+
+for line in file:
+    print(file.readline())
+
 file.close()
+
+# Open and close de file 
+with open("./text.text") as file:
+    for line in file:
+        print(line)
